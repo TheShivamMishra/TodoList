@@ -35,6 +35,6 @@ app.get("/about",(req,res)=>{
     });
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
   console.log("Server is Runnig at port 3000");
 });
